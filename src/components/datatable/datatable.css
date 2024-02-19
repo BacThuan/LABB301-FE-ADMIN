@@ -1,0 +1,165 @@
+.datatable {
+  padding: 20px;
+}
+.datatableTitle {
+  width: 100%;
+  font-size: 24px;
+  color: gray;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.datatableTitleTool {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.datatable .link {
+  text-decoration: none;
+  color: green;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid green;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.datatable form {
+  font-size: 14px;
+  padding: 5px;
+}
+.datatable input {
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid green;
+  padding: 5px;
+  border-radius: 5px;
+  width: 230px;
+}
+
+.cellWithImg {
+  display: flex;
+  align-items: center;
+}
+.cellImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.cellWithStatus {
+  padding: 5px;
+  border-radius: 5px;
+}
+.datatable .active {
+  background-color: rgba(0, 128, 0, 0.05);
+  color: green;
+}
+.datatable .pending {
+  background-color: rgba(255, 217, 0, 0.05);
+  color: goldenrod;
+}
+.datatable .passive {
+  background-color: rgba(255, 0, 0, 0.05);
+  color: crimson;
+}
+
+.cellAction {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.datatable .blackButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: rgba(9, 9, 9, 0.596);
+  border: 1px dotted rgba(9, 9, 9, 0.596);
+  cursor: pointer;
+}
+.datatable a {
+  text-decoration: none;
+}
+
+.datatable .purpleButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: rgba(48, 0, 88, 0.596);
+  border: 1px dotted rgba(48, 0, 88, 0.596);
+  cursor: pointer;
+}
+
+.datatable .greenButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: rgba(0, 88, 22, 0.596);
+  border: 1px dotted rgba(0, 88, 22, 0.596);
+  cursor: pointer;
+}
+
+.datatable .blueButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: darkblue;
+  border: 1px dotted rgba(0, 0, 139, 0.596);
+  cursor: pointer;
+}
+
+.datatable .redButton {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: crimson;
+  border: 1px dotted rgba(220, 20, 60, 0.6);
+  cursor: pointer;
+}
+
+.datatable img {
+  height: 50px;
+  width: 50px;
+}
+
+.datatableFindId form {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.datatableFindId input {
+  width: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .datatableTitleTool {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: self-start;
+  }
+
+  .datatableTitleTool form {
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .datatableTitleTool input {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .datatableTitle {
+    display: inline-block;
+  }
+  .datatableTitleTool {
+    display: inline;
+    /* grid-template-columns: auto auto auto auto; */
+  }
+  .datatableTitleTool button {
+    width: 59%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+}

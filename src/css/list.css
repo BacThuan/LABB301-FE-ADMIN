@@ -1,0 +1,111 @@
+.listData {
+  display: flex;
+}
+.listDataContainer {
+  flex: 6;
+  width: 80%;
+}
+.update-title {
+  /* margin-left: 150px; */
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.update-status {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.update-status button {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: blue;
+  border: 1px dotted blue;
+  cursor: pointer;
+}
+
+.update-status select {
+  padding: 2px 5px;
+  border-radius: 5px;
+  height: 50px;
+  color: rgb(0, 54, 0);
+  border: 1px dotted rgb(0, 54, 0);
+  cursor: pointer;
+}
+.modalContainer {
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  display: grid;
+  gap: 15px;
+}
+
+.modalContainer .modal-title {
+  display: inline-block;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+}
+.modalContainer form {
+  display: grid;
+  justify-content: center;
+}
+.modalContainer label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-style: italic;
+  font-weight: 500;
+}
+.modalContainer input {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 500;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.modalContainer textarea {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-style: italic;
+  font-weight: 500;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.modalContainer button {
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: blue;
+  border: 1px dotted blue;
+  cursor: pointer;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.checkBox label {
+  margin-right: 50px;
+}
+.checkBox input {
+  height: 20px;
+  width: 20px;
+}
+.colorContent {
+  display: flex;
+  gap: 9px;
+}
+.colorIcon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+}

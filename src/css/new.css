@@ -1,0 +1,291 @@
+.new {
+  width: 100%;
+  display: flex;
+}
+.newContainer {
+  margin-left: 20px;
+  flex: 6;
+}
+.newhtop,
+.newhbottom {
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+}
+.newhtop h1 {
+  color: rgb(81, 81, 81);
+  font-size: 20px;
+}
+
+.newhForm form {
+  justify-content: space-between;
+}
+.newhForm .selectRooms {
+  width: 100%;
+}
+.newhForm select {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.newhForm .formInput {
+  margin-bottom: 20px;
+  width: 40%;
+}
+.newhForm label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.newhForm .icon {
+  cursor: pointer;
+}
+
+.newhForm input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.newhForm textarea {
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.newhForm button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.newhForm button:disabled {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  background-color: rgba(0, 128, 128, 0.56);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.newhForm .auth {
+  font-size: 13px;
+  max-width: 100px;
+  padding: 15px 15px;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.formBody {
+  display: flex;
+  width: 100%;
+}
+.formBody div {
+  width: 100%;
+}
+.delete_auth {
+  cursor: pointer;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: solid 1px;
+  margin-left: 20px;
+}
+
+.permission {
+  display: flex;
+  margin-top: 10px;
+}
+.checkBox {
+  margin-top: 20px;
+}
+
+.permission label {
+  width: 100%;
+}
+.colorContent {
+  display: flex;
+  gap: 9px;
+}
+.colorIcon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.reused-image {
+  display: inline-block;
+  width: calc(100% / 4);
+}
+
+.reused {
+  height: 200px;
+  cursor: pointer;
+}
+.check {
+  position: relative;
+  width: calc(100% / 4);
+}
+
+.check::before {
+  content: "\2713"; /* Unicode checkmark character */
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px; /* Adjust the font size as needed */
+  color: white; /* Adjust the color as needed */
+  padding: 5px;
+  background-color: red; /* Adjust the background color as needed */
+}
+
+.listReused {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.showPreviousImage {
+  width: 100%;
+}
+.imgOrder {
+  height: 100px;
+  width: 100px;
+}
+.input {
+  text-align: center;
+  width: 25px !important;
+  border: none !important;
+  padding: 10px 0 !important;
+}
+.handle {
+  width: 25px !important;
+  display: inline-block !important;
+  border: none !important;
+  background-color: white !important;
+}
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.trash {
+  cursor: pointer;
+}
+.trash:hover {
+  background-color: rgba(0, 0, 0, 0.266);
+}
+.table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+.table th,
+.table td {
+  border: 1px solid black;
+}
+
+.addNewItems {
+  position: fixed;
+  z-index: 30;
+  background-color: white;
+  top: 5%;
+  left: 13%;
+}
+
+.formBody .datePicker > div:first-child {
+  width: 100%;
+}
+
+.formBody .datePicker > div:nth-child(2) div {
+  text-align: center;
+  width: 50%;
+}
+
+.formBody .datePicker > div:nth-child(2) button {
+  width: 30px;
+  margin-top: 0;
+}
+
+.formBody .datePicker .react-datepicker__month-container {
+  width: 100%;
+  margin-left: 100px;
+}
+.formBody .datePicker .react-datepicker__current-month {
+  margin-left: 25px;
+  width: 200px !important;
+}
+.formBody .datePicker .react-datepicker__header {
+  background-color: white;
+  border: none;
+}
+/* Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+  .newhForm .formInput {
+    width: 70%;
+  }
+
+  .addNewItems {
+    width: 80%;
+    top: 5%;
+    left: 10%;
+  }
+
+  .formBody .datePicker .react-datepicker__month-container {
+    margin-left: 50px;
+  }
+  .formBody .datePicker .react-datepicker__current-month {
+    margin-left: -20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .formBody .datePicker > div:nth-child(2) div {
+    width: 55%;
+  }
+
+  .formBody .datePicker .react-datepicker__month-container {
+    margin-left: 15px;
+  }
+  .formBody .datePicker .react-datepicker__current-month {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .formBody {
+    display: inline-block;
+  }
+
+  .formBody .react-datepicker-popper {
+    width: 400px;
+  }
+  .formBody .datePicker > div:nth-child(2) div button {
+    margin-top: 5px;
+    width: 10%;
+    height: 20%;
+  }
+
+  .formBody .datePicker .react-datepicker__month-container {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+  .formBody .react-datepicker {
+    width: 100% !important;
+  }
+}

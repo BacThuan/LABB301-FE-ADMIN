@@ -1,0 +1,81 @@
+.home {
+  display: flex;
+}
+.homeContainer {
+  flex: 6;
+  width: 80%;
+}
+.widgets {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+.datatableHome {
+  height: 600px;
+  padding: 20px;
+}
+.listContainer {
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+}
+.listTitle {
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.link {
+  margin-left: 30px;
+  text-decoration: none;
+  color: green;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid green;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.selectDate {
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+}
+.home input {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 30px;
+  border: 1px solid black;
+}
+.charts {
+  margin-left: 18%;
+}
+/* Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+  .charts {
+    margin-left: 20px;
+  }
+}
+
+/* Ipad dọc(768 x 1024) */
+@media screen and (max-width: 768px) {
+  .charts {
+    margin-left: 10px;
+  }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px) {
+  .charts {
+    margin-left: 5px;
+  }
+  .home form {
+    display: inline-block;
+    margin-left: 0;
+    width: 57%;
+  }
+  .home input {
+    margin-left: 5px;
+  }
+}

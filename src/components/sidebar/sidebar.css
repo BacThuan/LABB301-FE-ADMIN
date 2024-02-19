@@ -1,0 +1,101 @@
+.sidebar {
+  flex: 1;
+  border-right: 0.5px solid rgb(230, 227, 227);
+  min-height: 100vh;
+  background-color: white;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.sidebarTitle {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebarTitle .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6439ff;
+}
+
+.sidebarTitle hr {
+  height: 0;
+  border: 0.5px solid rgb(230, 227, 227);
+}
+
+.sidebarCenter {
+  padding-left: 10px;
+}
+.sidebarCenter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebarCenter .title {
+  font-size: 10px;
+  font-weight: bold;
+  color: #999;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.sidebarCenter li {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.sidebarCenter li:hover {
+  background-color: #ece8ff;
+}
+
+.sidebarCenter .icon {
+  font-size: 18px;
+  color: #7451f8;
+}
+
+.sidebarCenter span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  margin-left: 10px;
+}
+.sidebarButton {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.63);
+  color: white;
+  width: 30px;
+}
+.sidebarButton .openSideBar {
+  transform: rotate(90deg);
+  transform-origin: left bottom;
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 20px;
+}
+/* Ipad dọc(768 x 1024) */
+@media screen and (max-width: 768px) {
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 4%;
+    z-index: 100;
+  }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px) {
+}
